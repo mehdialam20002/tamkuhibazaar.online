@@ -55,7 +55,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         </Link>
 
                         <div className="mb-4">
-                            <span className="text-secondary-foreground bg-secondary px-3 py-1 rounded-full font-bold tracking-widest uppercase text-xs">{post.category}</span>
+                            <span className="text-secondary-foreground bg-secondary px-3 py-1 rounded-full font-bold tracking-widest uppercase text-xs">
+                                {post.category}
+                            </span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-foreground leading-tight drop-shadow-md">
@@ -87,7 +89,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         {`The future of quick commerce is here, and it's built specifically for the residents of Purvanchal. We believe that top-tier technology should be accessible everywhere, not just in metropolitan hubs.`}
                     </p>
 
-                    <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Bridging the Gap</h2>
+                    <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">
+                        Bridging the Gap
+                    </h2>
 
                     <p className="mb-6 text-muted-foreground leading-relaxed">
                         {`Ever since we launched Tamkuhi Bazaar, the overwhelming response from Tamkuhi Raj and Sewarhi has been incredible. Hundreds of daily orders have proven that convenience is universally desired. Today, we are thrilled to announce the next step in our journey.`}
@@ -97,12 +101,20 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         {`"Our mission has always been simple: empower local vendors and deliver happiness to doorsteps within 30 minutes. Today, the circle grows."`}
                     </blockquote>
 
-                    <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">What this means for you</h2>
+                    <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">
+                        What this means for you
+                    </h2>
 
                     <ul className="space-y-4 mb-8 text-muted-foreground">
-                        <li><strong className="text-foreground">Faster Deliveries:</strong> With new micro-fulfillment centers, our delivery radius shrinks, meaning your essentials arrive hotter and fresher.</li>
-                        <li><strong className="text-foreground">More Vendors:</strong> We are onboarding 50+ new local shops across Kasia and Fazilnagar.</li>
-                        <li><strong className="text-foreground">Extended Hours:</strong> Nighttime deliveries are now being trialed in select zip codes.</li>
+                        <li>
+                            <strong className="text-foreground">Faster Deliveries:</strong> With new micro-fulfillment centers, our delivery radius shrinks, meaning your essentials arrive hotter and fresher.
+                        </li>
+                        <li>
+                            <strong className="text-foreground">More Vendors:</strong> We are onboarding 50+ new local shops across Kasia and Fazilnagar.
+                        </li>
+                        <li>
+                            <strong className="text-foreground">Extended Hours:</strong> Nighttime deliveries are now being trialed in select zip codes.
+                        </li>
                     </ul>
 
                     <p className="mb-12 text-muted-foreground leading-relaxed">
@@ -112,7 +124,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
                 <div className="mt-16 pt-8 border-t border-border flex items-center justify-between">
                     <div className="flex gap-2 items-center">
-                        <span className="font-bold mr-4">Share this article:</span>
+                        <span className="font-bold mr-4">
+                            {`Share this article:`}
+                        </span>
                         <button className="text-muted-foreground hover:text-primary transition-colors p-2 glass rounded-full">
                             <Share2 className="w-5 h-5" />
                         </button>

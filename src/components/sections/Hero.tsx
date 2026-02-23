@@ -53,7 +53,7 @@ export function Hero() {
                                     className="w-full h-14 pl-12 pr-4 rounded-full border border-input bg-background/50 backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm transition-all"
                                 />
                             </div>
-                            <Button size="lg" className="h-14 px-8 rounded-full text-lg w-full sm:w-auto">
+                            <Button    onClick={() => window.open("https://app.tamkuhibazaar.online/", "_blank")} size="lg" className="h-14 px-8 rounded-full text-lg w-full sm:w-auto">
                                 Order Now
                             </Button>
                         </motion.div>
