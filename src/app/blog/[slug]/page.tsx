@@ -3,8 +3,6 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, Share2 } from "lucide-react";
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-    // A quick mock content generator based on the slug. 
-    // In a real app this would fetch from a CMS.
     const getPost = (slug: string) => {
         if (slug === "farmers") {
             return {
@@ -40,7 +38,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
     return (
         <article className="min-h-screen bg-background pb-20 pt-20 md:pt-24 lg:pt-0">
-            {/* Full width Hero Image */}
             <div className="relative w-full h-[60vh] min-h-[400px]">
                 <Image
                     src={post.image}
@@ -49,7 +46,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     className="object-cover"
                     priority
                 />
-                {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
 
                 <div className="absolute bottom-0 w-full">
@@ -84,23 +80,25 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </div>
             </div>
 
-            {/* Content Area */}
             <div className="container mx-auto px-4 md:px-6 pt-12 max-w-3xl">
                 <div className="prose prose-lg dark:prose-invert prose-primary mx-auto">
+
                     <p className="lead text-xl text-muted-foreground font-medium mb-8">
-                        The future of quick commerce is here, and it's built specifically for the residents of Purvanchal. We believe that top-tier technology should be accessible everywhere, not just in metropolitan hubs.
+                        {`The future of quick commerce is here, and it's built specifically for the residents of Purvanchal. We believe that top-tier technology should be accessible everywhere, not just in metropolitan hubs.`}
                     </p>
 
                     <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Bridging the Gap</h2>
+
                     <p className="mb-6 text-muted-foreground leading-relaxed">
-                        Ever since we launched Tamkuhi Bazaar, the overwhelming response from Tamkuhi Raj and Sewarhi has been incredible. Hundreds of daily orders have proven that convenience is universally desired. Today, we're thrilled to announce the next step in our journey.
+                        {`Ever since we launched Tamkuhi Bazaar, the overwhelming response from Tamkuhi Raj and Sewarhi has been incredible. Hundreds of daily orders have proven that convenience is universally desired. Today, we are thrilled to announce the next step in our journey.`}
                     </p>
 
                     <blockquote className="border-l-4 border-primary pl-6 italic text-xl my-8 text-foreground/90 font-medium py-2">
-                        "Our mission has always been simple: empower local vendors and deliver happiness to doorsteps within 30 minutes. Today, the circle grows."
+                        {`"Our mission has always been simple: empower local vendors and deliver happiness to doorsteps within 30 minutes. Today, the circle grows."`}
                     </blockquote>
 
                     <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">What this means for you</h2>
+
                     <ul className="space-y-4 mb-8 text-muted-foreground">
                         <li><strong className="text-foreground">Faster Deliveries:</strong> With new micro-fulfillment centers, our delivery radius shrinks, meaning your essentials arrive hotter and fresher.</li>
                         <li><strong className="text-foreground">More Vendors:</strong> We are onboarding 50+ new local shops across Kasia and Fazilnagar.</li>
@@ -108,15 +106,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     </ul>
 
                     <p className="mb-12 text-muted-foreground leading-relaxed">
-                        Stay tuned as we continue to roll out updates to the app. Make sure your Tamkuhi Bazaar application is updated to the latest version to access the new delivery zones. Thank you for making this local revolution possible!
+                        {`Stay tuned as we continue to roll out updates to the app. Make sure your Tamkuhi Bazaar application is updated to the latest version to access the new delivery zones. Thank you for making this local revolution possible!`}
                     </p>
                 </div>
 
-                {/* Share/Footer */}
                 <div className="mt-16 pt-8 border-t border-border flex items-center justify-between">
                     <div className="flex gap-2 items-center">
                         <span className="font-bold mr-4">Share this article:</span>
-                        <button className="text-muted-foreground hover:text-primary transition-colors p-2 glass rounded-full"><Share2 className="w-5 h-5" /></button>
+                        <button className="text-muted-foreground hover:text-primary transition-colors p-2 glass rounded-full">
+                            <Share2 className="w-5 h-5" />
+                        </button>
                     </div>
                 </div>
             </div>

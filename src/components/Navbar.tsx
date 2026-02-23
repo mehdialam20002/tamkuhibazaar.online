@@ -78,7 +78,7 @@ export function Navbar() {
                         </span>
                     </button>
 
-                    <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/25">
+                    <button  onClick={() => window.open("https://play.google.com/store/apps/details?id=com.tamkuhikart.app&pcampaignid=web_share", "_blank")} className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/25">
                         Download App
                     </button>
                 </div>
